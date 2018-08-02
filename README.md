@@ -1,4 +1,8 @@
-Kotlin Hello World Demo
-=======================
+Kotlin Coroutines Demo
+======================
 
-Hello world from kotlin. Open it in IDE and run `Hello.kt`
+"协程"是Kotlin目前的一项实验性质的语言特性。
+
+我们先写一个最简单的例子感受一下。
+
+Run `Hello.kt` in your IDE.
