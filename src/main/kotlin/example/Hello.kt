@@ -20,7 +20,7 @@ fun main() {
         launch {
             printHello()
         }
-        println("    after launch: " + now())
+        println("    after launch, will delay 2s: " + now())
         delay(2000)
         println("    block end: " + now())
     }
@@ -29,9 +29,12 @@ fun main() {
 
 // Note: modifier `suspend`
 private suspend fun printHello() {
-    println("        launch start: " + now())
+    println("        launch start, will delay 1s: " + now())
     delay(1000)
-    println("        Hello: " + now())
+    println("        Hello1: " + now())
+    println("        launch start, will delay 2s: " + now())
+    delay(2000)
+    println("        Hello2: " + now())
     println("        launch end: " + now())
 }
 
